@@ -14,7 +14,6 @@ export default function App() {
       ...prevState,
       { text: enteredGoalText, id: Math.random().toString() },
     ]);
-
     endAddGoalHandler();
   };
 
@@ -22,7 +21,6 @@ export default function App() {
     setCourseGoals((courseGoals) =>
       courseGoals.filter((courseGoal) => courseGoal.id !== id)
     );
-    console.log("DELETED");
   };
 
   const startAddGoalHandler = () => {
